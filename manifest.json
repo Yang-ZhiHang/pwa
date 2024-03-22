@@ -1,10 +1,11 @@
 {
     "name": "VisionVoice",
     "short_name": "VisionVoice",
-    "display": "standalone",
+    "lang": "en-US",
     "start_url": "./",
     "theme_color": "#181c25",
     "background_color": "#181c25",
+    "display": "standalone",
     "display_override": [
       "window-controls-overlay"
     ],
