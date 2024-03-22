@@ -2,16 +2,16 @@
 if (navigator.serviceWorker != null) {
   navigator.serviceWorker.register('sw.js')
   .then(function(registration) {
-    console.log('Registered events at scope: ', registration.scope);
+    // console.log('Registered events at scope: ', registration.scope);
   });
 }
 
-var cacheStorageKey = 'minimal-pwa-1'
+var cacheStorageKey = 'minimal-pwa-4'
 
 var cacheList = [
   '/',
   "index.html",
-  "main.css",
+  "index.css",
   "favicon.png"
 ]
 
