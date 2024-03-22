@@ -2,7 +2,7 @@
     "name": "VisionVoice",
     "short_name": "VisionVoice",
     "display": "standalone",
-    "start_url": "/",
+    "start_url": "./",
     "theme_color": "#181c25",
     "background_color": "#181c25",
     "display_override": [
