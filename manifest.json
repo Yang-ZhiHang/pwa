@@ -1,15 +1,17 @@
 {
-    "name": "Minimal app to try PWA",
-    "short_name": "Minimal PWA",
+    "name": "VisionVoice",
+    "short_name": "VisionVoice",
     "display": "standalone",
     "start_url": "/",
-    "theme_color": "#8888ff",
-    "background_color": "#aaaaff",
+    "theme_color": "#181c25",
+    "background_color": "#181c25",
+    "display_override": [
+      "window-controls-overlay"
+    ],
     "icons": [
       {
-        "src": "favicon.png",
-        "sizes": "1024x1023",
-        "type": "image/png"
+        "src": "./favicon.png",
+        "sizes": "256x256"
       }
     ]
   }
