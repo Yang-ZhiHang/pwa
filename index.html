@@ -1,13 +1,28 @@
 <head>
-  <title>VisonVoice</title>
-  <meta name="viewport" content="width=device-width, user-scalable=no" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="stylesheet" href="index.css">
-  <link rel="manifest" href="manifest.json" />
+	<title>VisonVoice</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="icon" href="./favicon.ico">
+	<link rel="stylesheet" href="index.css">
+	<link rel="manifest" href="manifest.json" />
 </head>
 
 <body>
-  <h3>PWA Test User Interface</h3>
-  <div>Minimal PWA, open console in Personnal Computer for more information.</div>
-  <script src="./sw.js"></script>
+	<img id="my-image" src="favicon.png" alt="favicon" />
+	<div class="button-area">
+		<!-- 导航栏和两个按钮 -->
+		<div class="navtog" id="navtog"></div>
+		<div class="dropdown">
+			<button class="button" id="button1">智慧拍照</button>
+			<button class="button" id="button2">环境识别</button>
+		</div>
+
+		<!-- iframe -->
+		<iframe allow="camera *;" id="nestedWebpage"></iframe>
+
+		<!-- 导航栏的script响应 -->
+		<!-- 点击使iframe的src改变 -->
+		<script src="./index.js"></script>
+	</div>
+	<script src="./sw.js"></script>
 </body>

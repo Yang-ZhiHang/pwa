@@ -13,6 +13,10 @@
       {
         "src": "./favicon.png",
         "sizes": "256x256"
+      },
+      {
+        "src": "./favicon.ico",
+        "sizes": "64x64"
       }
     ]
   }

@@ -12,7 +12,9 @@ var cacheList = [
   '/',
   "index.html",
   "index.css",
-  "favicon.png"
+  "index.js",
+  "favicon.png",
+  "favicon.ico"
 ]
 
 self.addEventListener('install', e => {
