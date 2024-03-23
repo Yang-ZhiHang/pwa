@@ -4,6 +4,7 @@
 let template = null;
 let templateActions = [];
 let initialData = null;
+const installButton = document.querySelector('#install-button')
 
 async function sendClientMessage(data) {
   const allClients = await clients.matchAll({
@@ -27,6 +28,7 @@ self.addEventListener('activate', (event) => {
 // when it gets installed the first time.
 self.addEventListener('widgetinstall', (event) => {
   event.waitUntil(renderEmptyWidget(event));
+  installButton.styple.display = 'none';
 });
 
 // Listen to the widgetclick event to react to user actions in the widget.
