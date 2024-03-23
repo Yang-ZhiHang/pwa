@@ -6,7 +6,7 @@ if (navigator.serviceWorker != null) {
   });
 }
 
-var cacheStorageKey = 'minimal-pwa-5'
+var cacheStorageKey = 'minimal-pwa-6'
 
 var cacheList = [
   '/',
@@ -51,3 +51,6 @@ self.addEventListener('activate', function(e) {
     })
   )
 })
+
+// Handle the mini-player widget updates in another script.
+importScripts('./sw-widgets.js');
